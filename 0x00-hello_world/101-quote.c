@@ -1,14 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- *  * main - Print (with proper grammar, but the outcome is a piece of art,)
- *   *
- *    * Return: Always 0 (Success)
- *     */
+ * * main - Entry point
+ * *
+ * * Return: Always 1 (error code)
+ * */
 int main(void)
 {
-	const char* message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	for (int i = 0; message[i] != '\0'; i++)
-		putchar(message[i]);
-	putchar('\n');
+	write(2,
+			"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+			59);
 	return (1);
 }
