@@ -1,16 +1,15 @@
+#include <unistd.h>
+
 /**
- *  * main - entry point of the program
+ *  * main - Entry point
  *   *
- *    * Description: This program prints the string
- *     * "Programming is like building a multilingual puzzle"
- *      * to the console using the puts function
- *       *
- *        * Return: Always 0 (success)
- *         */
+ *    * Return: Always 0
+ *     */
 int main(void)
 {
-	    /* Print the string using the puts function */
-	    puts("Programming is like building a multilingual puzzle");
-
-	        return (0);
+	    char *str = "Programming is like building a multilingual puzzle\n";
+	        /* Print the string using puts */
+	        puts(str);
+		    /* Return 0 to indicate successful execution */
+		    return (0);
 } 
