@@ -1,6 +1,3 @@
-Here is the code in betty coding style:
-
-```c
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
