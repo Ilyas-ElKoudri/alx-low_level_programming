@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- *  * _strcat - concatenates two strings
- *   * @dest: the string to be appended to
- *    * @src: the string to append
- *     *
- *      * Return: a pointer to the resulting string dest
- *       */
+ *  * _strcat - concat 2 string
+ *   * @dest:char
+ *    * @src:char
+ *     * Return:char
+ *      */
 char *_strcat(char *dest, char *src)
 {
-	    int i, j;
+		char *s = dest;
 
-	        for (i = 0; dest[i] != '\0'; i++)
-			    {
-				        }
+			while (*dest != '\0')
+					{
+								dest++;
+									}
 
-		    for (j = 0; src[j] != '\0'; j++)
-			        {
-					        dest[i] = src[j];
-						        i++;
-							    }
-
-		        dest[i] = '\0';
-			    return dest;
-}
+				while (*src != '\0')
+						{
+									*dest = *src;
+											dest++;
+													src++;
+														}
+					*dest = '\0';
+						return (s);
+} 
