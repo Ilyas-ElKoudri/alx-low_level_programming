@@ -1,18 +1,22 @@
 #include <stdio.h>
+
 /**
- *  * main - entry point
- *   *
- *    * print all single digit numbers using putchar
- *     *
- *      * Return: Always 0
- *       */
+ * main - prints all the numbers of base 16 in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i;
-	char hex_digits[] = "0123456789abcdef";
-	for (i = 0; i < 16; i++)
+	int n;
+	char ch;
+
+	for (n = 48; n < 58; n++)
 	{
-		putchar(hex_digits[i]);
+		putchar(n);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
