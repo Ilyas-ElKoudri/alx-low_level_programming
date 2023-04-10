@@ -1,29 +1,29 @@
 #include <stdio.h>
+
 /**
- *  * main - Prints all possible combinations of two different dxgxts,
- *   *   in ascending order, separated by a comma followed by a space.
- *    *
- *     * Return: Always 0.
- *      */
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
+ */
 int main(void)
 {
-	int x, y;
-	for (x = 0; x < 9; x++)
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
 	{
-		for (y = x + 1; y <= 9; y++)
+		for (m = 49; m <= 57; m++)
 		{
-			putchar(x + '0');
-			putchar(y + '0');
-			if (x != 8 || y != 9)
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
-			}
-			else
-			{
-				putchar('\n');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }

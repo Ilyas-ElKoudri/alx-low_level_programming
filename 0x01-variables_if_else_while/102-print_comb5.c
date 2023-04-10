@@ -1,13 +1,13 @@
 #include <stdio.h>
+
 /**
- *  * main - Prints all possible combinations of two different dxgxts,
- *   *   in ascending order, separated by a comma followed by a space.
- *    *
- *     * Return: Always 0.
- *      */
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i, j;
+
 	for (i = 0; i < 100; i++)
 	{
 		for (j = 0; j < 100; j++)
@@ -25,6 +25,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
+
 		}
 	}
 	putchar('\n');
